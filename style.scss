@@ -161,6 +161,7 @@ img {
 .masthead {
   padding: 20px 0;
   // border-bottom: 1px solid $white;
+  position: relative;
 
   // @include mobile {
   //   text-align: center;
@@ -219,6 +220,10 @@ nav {
   // margin-top: 23px; // @TODO: Vertically middle align
   font-family: $karla;
   font-size: 14px;
+  top: 50%;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 
   @include mobile {
     float: none;
