@@ -216,10 +216,11 @@ img {
 }
 
 nav {
-  float: right;
-  // margin-top: 23px; // @TODO: Vertically middle align
   font-family: $karla;
   font-size: 14px;
+  // float: right;
+  right: 0;
+  // margin-top: 23px; // @TODO: Vertically middle align
   top: 50%;
   position: absolute;
   -ms-transform: translateY(-50%);
