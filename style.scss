@@ -260,6 +260,10 @@ nav {
   border-bottom: none;
 }
 
+.posts > .post:hover {
+  background-color: $darkGray;
+}
+
 .post {
   blockquote {
     margin: 1.8em .8em;
