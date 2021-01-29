@@ -9,6 +9,10 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -18,8 +22,8 @@ html {
 }
 
 body {
-	background: $darkerGray;
-  font: 18px/1.4 $helvetica;
+  background: $darkerGray;
+  font: 18px/1.4 $karla;
   color: $white;
 }
 
@@ -31,7 +35,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $karla;
   color: $white;
   font-weight: bold;
 
@@ -69,11 +73,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $gold;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $gold;
   }
 }
 
@@ -158,9 +162,9 @@ img {
   padding: 20px 0;
   // border-bottom: 1px solid $white;
 
-  @include mobile {
-    text-align: center;
-  }
+  // @include mobile {
+  //   text-align: center;
+  // }
 }
 
 .site-avatar {
@@ -194,10 +198,10 @@ img {
   margin: 0;
   color: $white;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-family: $karla;
+  // font-weight: 300;
+  font-size: 20px;
+  // letter-spacing: 1px;
 }
 
 .site-description {
@@ -213,7 +217,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $karla;
   font-size: 18px;
 
   @include mobile {
@@ -232,7 +236,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $lightGray;
     }
   }
 }
@@ -282,6 +286,46 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+
+/// jaime.rs stuff ///////////////////////////////
+
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa:hover {
+    color: #e5c07b;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+
+/////////////////////////
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
