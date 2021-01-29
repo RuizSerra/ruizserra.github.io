@@ -200,7 +200,7 @@ img {
   cursor: pointer;
   font-family: $karla;
   // font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   // letter-spacing: 1px;
 }
 
@@ -216,15 +216,15 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  // margin-top: 23px; // @TODO: Vertically middle align
   font-family: $karla;
-  font-size: 18px;
+  font-size: 14px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   a {
