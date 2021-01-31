@@ -117,13 +117,18 @@ img {
   max-width: 100%;
 }
 
+a > article:hover {
+  background-color: $darkGray;
+}
+
 article > h1 {
   font-size: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: $karla;
 }
 
 article > .entry {
   font-family: 'Source Serif Pro', serif;
+  color: $white;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -211,7 +216,7 @@ article > .entry {
   margin: 0;
   color: $white;
   cursor: pointer;
-  font-family: 'Source Serif Pro', sans-serif; //$karla;
+  font-family: $karla;
   // font-weight: 300;
   font-size: 18px;
   // letter-spacing: 1px;
