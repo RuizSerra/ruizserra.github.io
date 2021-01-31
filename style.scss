@@ -10,6 +10,7 @@
 // Syntax highlighting @import is at the bottom of this file
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
 /* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 
@@ -203,7 +204,7 @@ article > h1 {
   margin: 0;
   color: $white;
   cursor: pointer;
-  font-family: $karla;
+  font-family: 'Work Sans', sans-serif; //$karla;
   // font-weight: 300;
   font-size: 18px;
   // letter-spacing: 1px;
