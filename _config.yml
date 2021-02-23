@@ -49,6 +49,9 @@ url: http://blog.jaime.rs
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+plugins:
+  - jekyll-scholar
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
