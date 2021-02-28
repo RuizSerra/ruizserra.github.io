@@ -9,7 +9,7 @@ name: Jaime Ruiz Serra
 description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 
+avatar:
 
 #
 # Flags below are optional
@@ -51,6 +51,13 @@ baseurl: ""
 
 plugins:
   - jekyll-scholar
+
+scholar:
+    style: wireless-communications-and-mobile-computing
+    bibliography: library.bib
+    bibliography_template: bib
+    replace_strings: true
+    query: "@*"
 
 #
 # !! You don't need to change any of the configuration flags below !!
