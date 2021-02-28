@@ -387,6 +387,10 @@ div.date {
   color: #666;
 }
 
+ol.bibliography li {
+  list-style: none;
+}
+
 .highlight {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;
