@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About
+title: Jaime Ruiz Serra – About
+layout: default
 permalink: /about/
 ---
 

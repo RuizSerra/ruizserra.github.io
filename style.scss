@@ -10,6 +10,8 @@
 // Syntax highlighting @import is at the bottom of this file
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
@@ -25,9 +27,9 @@ html {
 }
 
 body {
-  background: $darkerGray;
-  font: 18px/1.4 $karla;
-  color: $white;
+  background: $backgroundColor;
+  font: 18px/1.4 $sansFontStack;
+  color: $black;
 }
 
 .container {
@@ -38,8 +40,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $karla;
-  color: $white;
+  color: $textColor;
   font-weight: bold;
 
   line-height: 1.7;
@@ -66,21 +67,21 @@ h3 {
   font-size: 20px;
 }
 
-h4 {
-  font-size: 18px;
-  color: $white;
-}
+// h4 {
+//   font-size: 18px;
+//   color: $white;
+// }
 
 p {
   margin: 15px 0;
 }
 
 a {
-  color: $gold;
+  color: $accentColor;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $gold;
+    color: $accentColor;
   }
 }
 
@@ -117,28 +118,9 @@ img {
   max-width: 100%;
 }
 
-a > article:hover {
-  background-color: $darkGray;
-}
-
-article > h1 {
-  font-size: 24px;
-  font-family: $karla;
-}
-
-article > .entry {
-  font-family: 'Source Serif Pro', serif;
-  color: $white;
-}
-
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $white;
 }
 
 // Specify the color of the selection
@@ -214,9 +196,9 @@ article > .entry {
 
 .site-name {
   margin: 0;
-  color: $white;
+  color: $textColor;
   cursor: pointer;
-  font-family: $karla;
+  font-family: $sansFontStack;
   // font-weight: 300;
   font-size: 18px;
   // letter-spacing: 1px;
@@ -224,7 +206,7 @@ article > .entry {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $white;
+  color: $textColor;
   font-size: 16px;
 
   @include mobile {
@@ -233,7 +215,7 @@ article > .entry {
 }
 
 nav {
-  font-family: $karla;
+  font-family: $sansFontStack;
   font-size: 14px;
   // float: right;
   right: 0;
@@ -318,7 +300,7 @@ footer {
 /// jaime.rs stuff ///////////////////////////////
 
 .social-icon {
-    color: #fff;
+    color: $textColor;
 }
 ul.social-icons {
     margin-top: 10px;
@@ -329,7 +311,7 @@ ul.social-icons {
     height: 100px;
 }
 .social-icons a {
-    color: #fff;
+    color: rgba(0, 0, 0, 0.3);;
     text-decoration: none;
 }
 
@@ -343,7 +325,7 @@ ul.social-icons {
 }
 
 .fa:hover {
-    color: #e5c07b;
+    color: $accentColor;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -351,17 +333,54 @@ ul.social-icons {
     transition: .5s;
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// Blog
-////////////////////////////////////////////////////////////////////////////////
-div.date {
-  font-size: 1rem;
-  color: $gray;
+
+/* -----------------------------------------------------------------------------
+ * Blog post typesetting
+ * ---------------------------------------------------------------------------*/
+.article > p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-ol.bibliography li {
-  list-style: none
+.footnotes {
+  // font-size: 0.7rem;
+  // line-height: 1.3;
+  text-align: justify;
+  text-justify: inter-word;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  margin-top: 40px;
 }
+
+.footnotes::before {
+  content: "Footnotes";
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: $sansFontStack;
+  font-weight: bold;
+}
+
+.footnotes ol {
+  padding-left: 15px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#bibliography::before {
+  content: "References";
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: $sansFontStack;
+  font-weight: bold;
+}
+
+// Serif fonts in post bodies
+// div.wrap.article {
+//   font-family: $serifFontStack;
+//   font-size: 16px;
+// }
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -369,3 +388,5 @@ ol.bibliography li {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+@import "blog";

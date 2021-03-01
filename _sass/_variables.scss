@@ -5,18 +5,25 @@
 
 // Colors
 $blue: #4183C4;
+$palePeach: #fcf6f0;
+$gold: #e5c07b;
 
 // Grays
-$black: #000;
+$black: rgba(0, 0, 0, 0.8);
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
-$lightGray: #eee;
-$white: #eee;
-$gold: #e5c07b;
+$lightGray: #ccc;
+$white: #fff;
+
+// Element colors
+$backgroundColor: $palePeach;
+$textColor: $black;
+$accentColor: $gold;
 
 // Font stacks
-$karla: 'Inter', 'Karla', Helvetica, sans-serif;
+$serifFontStack: 'Cardo', 'EB Garamond', serif;
+$sansFontStack: 'Inter', 'Karla', Helvetica, sans-serif;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;

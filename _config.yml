@@ -42,6 +42,7 @@ google_analytics:
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: http://blog.jaime.rs
+home_url: http://jaime.rs
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -53,7 +54,8 @@ plugins:
   - jekyll-scholar
 
 scholar:
-    style: wireless-communications-and-mobile-computing
+    # style: wireless-communications-and-mobile-computing
+    style: national-science-foundation-grant-proposals
     bibliography: library.bib
     bibliography_template: bib
     replace_strings: true
