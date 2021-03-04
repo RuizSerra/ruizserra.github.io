@@ -6,6 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@1&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cheboygan");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -304,9 +307,8 @@ nav a {
 
 .post blockquote {
   margin: 1.8em .8em;
-  border-left: 2px solid #666;
   padding: 0.1em 1em;
-  color: #666;
+  color: rgba(0, 0, 0, 0.4);
   font-size: 22px;
   font-style: italic;
 }
@@ -344,7 +346,7 @@ ul.social-icons {
 }
 
 .social-icons a {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
 
@@ -384,7 +386,7 @@ ul.social-icons {
 
 .footnotes::before {
   content: "Footnotes";
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.25);
   font-size: 9px;
   text-transform: uppercase;
   font-family: "Inter", "Karla", Helvetica, sans-serif;
@@ -394,12 +396,12 @@ ul.social-icons {
 .footnotes ol {
   padding-left: 15px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #bibliography::before {
   content: "References";
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.25);
   font-size: 9px;
   text-transform: uppercase;
   font-family: "Inter", "Karla", Helvetica, sans-serif;
@@ -411,7 +413,7 @@ div #posts {
 }
 
 div.post-row {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 p.post-title {
@@ -427,9 +429,18 @@ p.post-subtitle {
 
 p.post-date {
   margin: 0;
-  margin-top: 5px;
-  font-size: 12px;
-  color: #666;
+  margin-top: 10px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.front-matter > .wrap > h4 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.index-header {
+  padding: 20px 0;
 }
 
 .highlight {
@@ -913,7 +924,7 @@ h1 {
 }
 
 .nav a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.4);
   text-decoration: none;
   border-bottom: none;
   font-size: 12px;
@@ -957,7 +968,7 @@ h1 {
 .front-matter .bylines .byline h3 {
   font-size: 9px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .front-matter .bylines .byline p {
@@ -976,7 +987,7 @@ h1 {
 .article blockquote {
   margin: 0;
   padding: 0 1em;
-  color: #777;
+  color: rgba(0, 0, 0, 0.4);
   border-left: 0.25em solid #ddd;
 }
 
@@ -1034,7 +1045,7 @@ h1 {
 #bibliography ol.bibliography {
   padding-left: 15px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #blog {
@@ -1059,7 +1070,7 @@ h1 {
 
 #blog .post-date {
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
   font-weight: bold;
   margin-top: 4px;
@@ -1092,7 +1103,7 @@ h1 {
   font-size: 18px;
   position: relative;
   right: 100px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   width: 100px;
   margin-bottom: -24px;
 }
