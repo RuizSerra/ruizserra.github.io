@@ -6,7 +6,7 @@
 
 html {
   font-family: $sansFontStack;
-  color: rgba(0, 0, 0, 0.8);
+  color: $textColor;
   line-height: 1.5em;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,7 +19,7 @@ body .content {
   margin-bottom: 120px;
 }
 a {
-  color: rgba(0, 0, 0, 0.8);
+  color: $textColor;
 }
 a:hover {
   text-decoration: none;
@@ -53,7 +53,7 @@ h1 {
   margin-bottom: 15px;
 }
 .nav a {
-  color: rgba(0, 0, 0, 0.6);
+  color: $textColorSecondary;
   text-decoration: none;
   border-bottom: none;
   font-size: 12px;
@@ -89,7 +89,7 @@ h1 {
 .front-matter .bylines .byline h3 {
   font-size: 9px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: $textColorTertiary;
 }
 .front-matter .bylines .byline p {
   font-size: 10px;
@@ -98,14 +98,14 @@ h1 {
 .article {
   font-size: 15px;
   line-height: 1.6em;
-  color: rgba(0, 0, 0, 0.8);
+  color: $textColor;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .article blockquote {
   margin: 0;
   padding: 0 1em;
-  color: #777;
+  color: $textColorSecondary;
   border-left: 0.25em solid #ddd;
 }
 .article h2 {
@@ -153,7 +153,7 @@ h1 {
 #bibliography ol.bibliography {
   padding-left: 15px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: $textColorSecondary;
 }
 #blog {
   margin-top: 80px;
@@ -173,7 +173,7 @@ h1 {
 }
 #blog .post-date {
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.7);
+  color: $textColorSecondary;
   font-size: 12px;
   font-weight: bold;
   margin-top: 4px;
@@ -201,7 +201,7 @@ h1 {
   font-size: 18px;
   position: relative;
   right: 100px;
-  color: rgba(0, 0, 0, 0.5);
+  color: $textColorSecondary;
   width: 100px;
   margin-bottom: -24px;
 }

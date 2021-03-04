@@ -15,6 +15,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@1&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cheboygan');
 /* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 
@@ -29,7 +32,7 @@ html {
 body {
   background: $backgroundColor;
   font: 18px/1.4 $sansFontStack;
-  color: $black;
+  color: $textColor;
 }
 
 .container {
@@ -267,9 +270,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    // border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $textColorSecondary;
     font-size: 22px;
     font-style: italic;
   }
@@ -311,7 +314,7 @@ ul.social-icons {
     height: 100px;
 }
 .social-icons a {
-    color: rgba(0, 0, 0, 0.3);;
+    color: $textColorTertiary;
     text-decoration: none;
 }
 
@@ -354,7 +357,7 @@ ul.social-icons {
 
 .footnotes::before {
   content: "Footnotes";
-  color: rgba(0, 0, 0, 0.5);
+  color: $textColorTertiary;
   font-size: 9px;
   text-transform: uppercase;
   font-family: $sansFontStack;
@@ -364,12 +367,12 @@ ul.social-icons {
 .footnotes ol {
   padding-left: 15px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: $textColorSecondary;
 }
 
 #bibliography::before {
   content: "References";
-  color: rgba(0, 0, 0, 0.5);
+  color: $textColorTertiary;
   font-size: 9px;
   text-transform: uppercase;
   font-family: $sansFontStack;
@@ -383,7 +386,7 @@ div #posts {
   margin-top: 60px;
 }
 div.post-row {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 p.post-title {
   font-weight: bold;
@@ -396,11 +399,29 @@ p.post-subtitle {
 }
 p.post-date {
   margin: 0;
-  margin-top: 5px;
-  font-size: 12px;
-  color: $gray;
+  margin-top: 10px;
+  font-size: 10px;
+  color: $textColorSecondary;
 }
 
+// .wrap > h1 {
+// // h1 {
+//   font-family: "Cheboygan", "Shrikhand", $sansFontStack;
+//   font-weight: bold;
+//   font-size: 36px;
+// }
+
+.front-matter > .wrap > h4 {
+  // font-family: 'Libre Caslon Text', serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.index-header {
+  padding: 20px 0;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  // border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 // Serif fonts in post bodies
 // div.wrap.article {
