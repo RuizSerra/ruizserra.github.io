@@ -175,13 +175,11 @@ img {
 }
 
 ::-moz-selection {
-  color: #ccc;
-  background: #333;
+  background: #e5c07b;
 }
 
 ::selection {
-  color: #ccc;
-  background: #333;
+  background: #e5c07b;
 }
 
 .clearfix:before,
@@ -397,6 +395,23 @@ ul.social-icons {
   padding-left: 15px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.footnotes a,
+#bibliography a {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: underline;
+}
+
+.footnotes a:hover,
+#bibliography a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+}
+
+a.reversefootnote,
+a.reversefootnote:hover {
+  text-decoration: none;
 }
 
 #bibliography::before {
@@ -986,9 +1001,8 @@ h1 {
 
 .article blockquote {
   margin: 0;
-  padding: 0 1em;
+  padding: 0 1.5em;
   color: rgba(0, 0, 0, 0.4);
-  border-left: 0.25em solid #ddd;
 }
 
 .article h2 {

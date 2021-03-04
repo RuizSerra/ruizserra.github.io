@@ -128,12 +128,12 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $lightGray;
-  background: $darkGray;
+  // color: $lightGray;
+  background: $accentColor;
 }
 ::selection {
-  color: $lightGray;
-  background: $darkGray;
+  // color: $lightGray;
+  background: $accentColor;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -368,6 +368,23 @@ ul.social-icons {
   padding-left: 15px;
   font-size: 12px;
   color: $textColorSecondary;
+}
+
+.footnotes a,
+#bibliography a {
+  color: $textColorSecondary;
+  text-decoration: underline;
+}
+
+.footnotes a:hover,
+#bibliography a:hover {
+  color: $textColor;
+  text-decoration: underline;
+}
+
+a.reversefootnote,
+a.reversefootnote:hover {
+  text-decoration: none;
 }
 
 #bibliography::before {
